@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Issues</title>
+</head>
+<body>
+<h1>Max comments</h1>
+<span>{{ max_comment.title }}</span>
+<h1>Min comments</h1>
+<span>{{ min_comment.title }}</span>
+<h1>Min 10 comments</h1>
+{% for item in top_comments %}
+    <span>{{ item.title }}<br></span>
+{% endfor %}
+</body>
+</html>
